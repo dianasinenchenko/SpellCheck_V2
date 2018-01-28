@@ -22,7 +22,19 @@ namespace SpellCheck_V2
     {
         public MainWindow()
         {
-            InitializeComponent();
+            StackPanel myStackPanel = new StackPanel();
+
+            //Create TextBox
+            TextBox myTextBox = new TextBox();
+            myTextBox.Width = 500;
+
+
+            // Enable spellchecking on the TextBox.
+            myTextBox.SpellCheck.IsEnabled = true;
+
+
+            myStackPanel.Children.Add(myTextBox);
+            this.Content = myStackPanel;
         }
     }
 }
