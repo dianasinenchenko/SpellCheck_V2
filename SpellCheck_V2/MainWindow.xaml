@@ -1,12 +1,30 @@
 ﻿<Window x:Class="SpellCheck_V2.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SpellCheck_V2"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+      xmlns ="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x ="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      Width="447"
+      Height="500" 
+      ShowInTaskbar="False" 
+      ResizeMode="NoResize" 
+      Title="SpellCheck" >
+
+    <StackPanel HorizontalAlignment="Left">
+
+        <Label 
+                     Content="    Enter text"/>
+        <TextBox 
+                     SpellCheck.IsEnabled="True"
+                     x:Name="myTextBox" 
+                     AcceptsReturn="True" 
+                     FontSize="22" 
+                     FontFamily="Times New Roman"
+                     Background="White" 
+                     Width="400" 
+                     Height="200" 
+                     MaxLength="400" 
+                     TextWrapping="Wrap" 
+                     SelectionBrush="#FF5B88AC"
+                     Margin="10" />
+    </StackPanel>
+
 </Window>
